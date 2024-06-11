@@ -1,0 +1,15 @@
+<div class="h-full w-full">
+    <div class="border-b-4 my-3 border-blue-500 p-2">
+        <span class="text-2xl text-white bg-blue-700 p-2">All serials</span>
+    </div>
+    <div class="flex flex-wrap">
+        <app-card-movie class="p-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4" *ngFor="let serial of allSerials"
+            idMovie="{{serial.idMovie}}"
+            title="{{ serial.title }}" 
+            image="{{ serial.image }}" 
+            stars="{{ serial.stars }}"
+            link="{{ serial.link }}" 
+            status="{{serial.status}}">
+        </app-card-movie>
+    </div>
+</div>
