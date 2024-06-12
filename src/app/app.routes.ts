@@ -5,6 +5,7 @@ import { TitleComponent } from './components/title/title.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { ActorsComponent } from './components/actors/actors.component';
 import { SerialsComponent } from './components/serials/serials.component';
+import { TestComponent } from './components/test/test.component';
 
 
 export const routes: Routes = [
@@ -15,5 +16,6 @@ export const routes: Routes = [
     {path: 'serials', component: SerialsComponent},
     {path: 'search/:id', component: SearchComponent},
     {path: 'title/:title/id/:id', component: TitleComponent},  
+    {path: 'test', component: TestComponent},
 ];
 
