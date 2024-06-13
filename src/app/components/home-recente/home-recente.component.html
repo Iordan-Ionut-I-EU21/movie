@@ -1,1 +1,27 @@
-<h1 class="text-5xl">Need a carousel to create</h1>
+<div class="flex justify-center items-center">
+  <div class="relative overflow-hidden">
+    <div
+      class="flex transition-transform duration-300"
+      [ngStyle]="{ transform: 'translateX(-' + currentSlide * 100 + '%)' }">
+      <div
+        *ngFor="let slide of slides; let i = index"
+        class="w-full flex-shrink-0 items-center flex justify-center">
+        <img
+          [src]="slide.imageUrl"
+          class="w-1/3 object-cover px-2"
+          alt="image 1"
+        />
+      </div>
+    </div>
+    <button
+      (click)="prevSlide()"
+      class="absolute top-1/2 left-0 transform text-7xl -translate-y-1/2 bg-white p-2 rounded-full shadow-lg">
+      ‹
+    </button>
+    <button
+      (click)="nextSlide()"
+      class="absolute top-1/2 right-0 transform text-7xl -translate-y-1/2 bg-white p-2 rounded-full shadow-lg">
+      ›
+    </button>
+  </div>
+</div>

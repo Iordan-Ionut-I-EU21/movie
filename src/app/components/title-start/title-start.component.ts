@@ -24,8 +24,6 @@ export class TitleStartComponent implements OnInit, AfterViewInit{
 
   ngAfterViewInit(): void {
     this.groupSlidesFromat();
-    console.log(this.groupSlides);
-    console.log(this.slides);
   }
 
   ngOnInit(): void {
